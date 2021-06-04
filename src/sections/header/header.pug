@@ -1,0 +1,109 @@
+- 
+    var mainNavs = [
+        {
+            url: "#",
+            title: "Подарочные сертификаты",
+            class: "disabled",
+        },   
+        {
+            url: "#",
+            title: "Пункты выдачи"
+        },
+        {
+            url: "#",
+            title: "Постаматы"
+        },
+        {
+            url: "#",
+            title: "Помощь"
+        },
+        {
+            url: "#",
+            title: "Бесплатная доставка",
+            class: "pe-0",
+        }
+    ];
+- 
+    var footerNavs = [
+        {
+            title: "TOP Fashion",
+        },
+        {
+            title: "Premium",
+        },
+        {
+            title: "Ozon Card",
+        },
+        {
+            title: "LIVE",
+        },
+        {
+            title: "Акции",
+        },
+        {
+            title: "Бренды",
+        },
+        {
+            title: "Магазины",
+        },
+        {
+            title: "Сертификаты",
+        },
+        {
+            title: "Электроника",
+        },
+        {
+            title: "Одежда и обувь",
+        },
+        {
+            title: "Детские товары",
+        },
+        {
+            title: "Дом и сад",
+        },
+        {
+            title: "Ozon Travel",
+        },
+        {
+            title: "Dисконт",
+        },
+    ];
+header.container-xxl
+    .header.header--top.d-flex.justify-content-between.align-items-center
+        .header__city
+            a.city() Город
+        .header__nav.d-flex.align-items-center
+            a.badge.bg-primary.text-decoration-none.text-white(href="#") Покупайте как юрлицо
+            ul.nav
+                each item in mainNavs
+                    li.nav-item
+                        a.nav-link(href=item.url class=item.class)= item.title
+    .header.header--middle.bg-secondary
+        .header-search.input-group
+            .dropdown
+                button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle(
+                    type="button",
+                    data-bs-toggle="dropdown",
+                    aria-expanded="false"
+                ) Button
+                ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
+                    li
+                        a.dropdown-item(href='#') Action
+                    li
+                        a.dropdown-item(href='#') Another action
+                    li
+                        a.dropdown-item(href='#') Something else here
+
+            input.form-control(
+                type='text',
+                placeholder='',
+                aria-label='Example text with button addon',
+                aria-describedby='button-addon1'
+            )
+            button#button-addon2.btn.btn-primary(type='button') Поиск
+
+    .header.header--footer
+        ul.nav.justify-content-between
+            each item in footerNavs
+                li.nav-item
+                    a.nav-link.px-0(href=item.url class=item.class)= item.title

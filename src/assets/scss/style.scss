@@ -1,0 +1,8 @@
+@import './fonts';
+@import './variabless';
+@import './base';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Section
+@import '../../sections/header/header';
+@import '../../sections/footer/footer';

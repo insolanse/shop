@@ -1,0 +1,33 @@
+.header {
+    &--footer {
+        .nav {
+            &-link {
+                font-size: 14px;
+                line-height: 18px;
+                color: $base-color;
+            }
+        }
+    }
+
+    &-search {
+        background-color: #fff;
+        border: 2px solid $primary;
+        border-radius: 4px;
+
+        input {
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .dropdown {
+            padding: 2px;
+        }
+
+        .btn-primary {
+            border-radius: 0;
+        }
+    }
+}

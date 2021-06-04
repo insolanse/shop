@@ -1,0 +1,13 @@
+$base-color: #001a34;;
+$body-color: $base-color;
+$primary: #017;
+$secondary: #ccc;
+
+$container-max-widths: (
+  xxl: 1480px
+) !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);

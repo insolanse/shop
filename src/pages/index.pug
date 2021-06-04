@@ -1,0 +1,71 @@
+extends ../layouts/default.pug
+block head 
+    - var title = "Главная"
+    meta(name="description", content="Главная страница интернет магазина")
+    meta(name="keywords", content="Ключевые слова")
+
+block content
+    - 
+        var cards = [
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+            {
+                title: "Title title",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                img: {
+                    src: "",
+                    alt: ""
+                }
+            },
+        ];
+    .container-xxl 
+        .row.justify-content-center
+            each item in cards
+                .col-xl-2.col-lg-3.col-md-4.col-sm-6.mt-3
+                    .card
+                        img.card-img-top(src=item.img.src alt=item.img.alt)
+                        .card-body
+                            h5.card-title= item.title
+                            p.card-text= item.description
+                            a.btn.btn-primary(href='#') Go somewhere
+
+        //- .row
+        //-     .col-3
